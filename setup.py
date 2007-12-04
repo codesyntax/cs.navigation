@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='cs.navigation',
-      version='0.10',
+      version='0.1',
       description="Simple navigation portlet based on plone's but with
       additional markup checks",
       long_description=open('README.txt').read(),
