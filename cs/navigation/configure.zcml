@@ -1,8 +1,22 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
     i18n_domain="cs.navigation">
 
     <five:registerPackage package="." initialize=".initialize" />
+
+    <include package="plone.app.portlets" />
+    <include package=".portlets" />
+
+    <gs:registerProfile
+        name="default"
+        title="cs.navigation"
+        directory="profiles/default"
+        description="New navigation portlet"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
 
 </configure>
