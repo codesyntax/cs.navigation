@@ -5,11 +5,10 @@
 
     <dt class="portletHeader">
       <span class="portletTopLeft"></span>
-      <a href="#" 
+      <span href="#" 
          class="tile"
          tal:condition="view/title"
-         tal:attributes="href string:${root/absolute_url}/sitemap"
-         tal:content="view/title">Navigation</a>
+         tal:content="view/title">Navigation</span>
       <span class="portletTopRight"></span>
     </dt>
 
